@@ -1,26 +1,17 @@
-<?php
-	echo "<h1>Form Submitted</h1>";
-	echo $_POST["name"]."<br>";
-	echo $_POST["address"]."<br>";
-	echo $_POST["age"]."<br>";
-	echo $_POST["gender"]."<br>";
-	echo $_POST["blood_group"]."<br>";
-	echo $_POST["email"]."<br>";
-	echo $_POST["contact_no"]."<br>";
-?>
+<!DOCTYPE html>
 <html>
 <head>
 	<title></title>
 </head>
 <body>
-	<form action="" method="post">
+	<form>
 		<table align="center">
 			<tr>
 				<td><h3>Patient admission form</h3></td>
 			</tr>
 			<tr>
 				<td>Name:</td>
-				<td><input type="text" name="name" placeholder="Name"></style></td>
+				<td><input type="text" name-"Name" placeholder="Name"></style></td>
 			</tr>
 			<tr>
 				<td>Address:</td>
@@ -32,12 +23,12 @@
 			</tr>
 			<tr>
 				<td>Gender:</td>
-				<td><input type="radio" name="gender" value="Male">Male<input type="radio" name="gender" value="Female">Female</td>
+				<td><input type="radio" name="male" placeholder="male">Male<input type="radio" name="female" placeholder="female">Female</td>
 			</tr>
 			<tr>
 				<td>Blood Group:</td>
 				<td>
-					<select name="blood_group">
+					<select>
 						<option>A+</option>
 						<option>A-</option>
 						<option>B+</option>
@@ -56,10 +47,10 @@
 			<tr>
 			<tr>
 				<td>Contact no.:</td>
-				<td><input type="text" name="contact_no" placeholder="Contact no."></td>
+				<td><input type="text" name="contact no." placeholder="Contact no."></td>
 			</tr>
 			<tr></tr>
-			<tr><td align="right"><input type="Submit" value="Submit"></td></tr>
+			<tr><td align="right"><input type="Submit"></td></tr>
 		</table>
 	</form>
 
